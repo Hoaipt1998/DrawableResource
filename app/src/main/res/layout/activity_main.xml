@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+   <TextView
+       android:id="@+id/tvlogin"
+       app:layout_constraintTop_toTopOf="parent"
+       android:drawableStart="@drawable/ic_launcher_foreground"
+       android:paddingStart="150dp"
+       android:paddingBottom="20dp"
+       android:paddingEnd="20dp"
+       android:textSize="30dp"
+       android:textStyle="bold"
+       android:text="Login"
+       android:textDirection="rtl"
+       android:gravity="bottom"
+       android:textColor="#FFFFFF"
+       android:layout_width="match_parent"
+       android:background="@drawable/bg_button"
+       android:layout_height="250dp"/>
+   <androidx.appcompat.widget.AppCompatEditText
+       android:textStyle="bold"
+       android:textSize="20dp"
+       android:textColor="#CDC6C5"
+       android:text="Email"
+       android:drawableLeft="@drawable/ic_launcher_foreground"
+       android:elevation="15dp"
+       android:background="@drawable/bg_edittext"
+       android:layout_marginStart="40dp"
+       android:layout_marginEnd="40dp"
+       android:id="@+id/edt1"
+       app:layout_constraintTop_toBottomOf="@id/tvlogin"
+       app:layout_constraintBottom_toTopOf="@id/edt2"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"/>
+   <androidx.appcompat.widget.AppCompatEditText
+       android:textStyle="bold"
+       android:textSize="20dp"
+       android:textColor="#CDC6C5"
+       android:text="PassWord"
+       android:drawableLeft="@drawable/ic_launcher_foreground"
+       android:elevation="15dp"
+       android:background="@drawable/bg_edittext"
+       android:layout_marginStart="40dp"
+       android:layout_marginEnd="40dp"
+       android:id="@+id/edt2"
+       app:layout_constraintTop_toBottomOf="@id/edt1"
+       app:layout_constraintBottom_toTopOf="@id/tv1"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"/>
+   <TextView
+       android:textStyle="bold"
+       app:layout_constraintEnd_toEndOf="parent"
+       android:layout_marginEnd="40dp"
+       android:id="@+id/tv1"
+       android:text="Forgot Password ?"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       app:layout_constraintTop_toBottomOf="@id/edt2"
+       app:layout_constraintBottom_toBottomOf="@id/btlogin"/>
+   <androidx.appcompat.widget.AppCompatButton
+       android:id="@+id/btlogin"
+       android:text="Login"
+       android:textStyle="bold"
+       android:textSize="20dp"
+       android:textColor="#FDFCFC"
+       android:layout_marginStart="40dp"
+       android:layout_marginEnd="40dp"
+       android:background="@drawable/bg_btlogin"
+       app:layout_constraintBottom_toTopOf="@id/tv2"
+       app:layout_constraintTop_toBottomOf="@id/tv1"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"/>
+   <TextView
+       app:layout_constraintEnd_toStartOf="@id/tv3"
+       android:textStyle="bold"
+       android:id="@+id/tv2"
+       android:text="Don't have account?"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toBottomOf="@id/btlogin"
+       app:layout_constraintBottom_toBottomOf="parent"/>
+   <TextView
+       android:textColor="#f20"
+       android:textStyle="bold"
+       app:layout_constraintEnd_toEndOf="parent"
+       android:id="@+id/tv3"
+       android:text="Register"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       app:layout_constraintStart_toEndOf ="@id/tv2"
+       app:layout_constraintTop_toBottomOf="@id/btlogin"
+       app:layout_constraintBottom_toBottomOf="parent"/>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
